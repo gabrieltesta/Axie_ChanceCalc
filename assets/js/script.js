@@ -130,6 +130,7 @@ function updateProbability() {
 updateProbability();
 
 $('.new-game').on('click', () => {
+    intCurrentEnergy = 2;
     for (row = 0; row < 3; row++) {
         for (column = 0; column < 4; column++) {
             gameData.qtd[row][column] = 0;
