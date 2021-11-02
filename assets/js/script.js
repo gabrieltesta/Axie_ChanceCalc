@@ -198,8 +198,6 @@ $('.modal-cards-class-item, .modal-cards-type-item').on('click', (evt) => {
     if (activeTypeFilter != undefined)
         activeFilterString += '-' + activeTypeFilter;
 
-    console.log(activeFilterString);
-
     if (activeFilterString == '')
         $('.modal-body img').show();
     else {
