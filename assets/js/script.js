@@ -9,9 +9,9 @@ var defaultGameData = {
         2: [0, 0, 0, 0],
     },
     'img_src': {
-        0: ['https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-tail-12.png', 'https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-mouth-02.png', 'https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-horn-12.png', 'https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-back-10.png'],
-        1: ['https://storage.googleapis.com/axie-cdn/game/cards/base/beast-back-02.png', 'https://storage.googleapis.com/axie-cdn/game/cards/base/beast-horn-04.png', 'https://storage.googleapis.com/axie-cdn/game/cards/base/beast-mouth-02.png', 'https://storage.googleapis.com/axie-cdn/game/cards/base/bug-tail-06.png'],
-        2: ['https://storage.googleapis.com/axie-cdn/game/cards/base/plant-back-12.png', 'https://storage.googleapis.com/axie-cdn/game/cards/base/plant-horn-10.png', 'https://storage.googleapis.com/axie-cdn/game/cards/base/plant-tail-02.png', 'https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-mouth-04.png'],
+        0: ['./assets/img/cards/aquatic-tail-12.png', './assets/img/cards/aquatic-mouth-02.png', './assets/img/cards/aquatic-horn-12.png', './assets/img/cards/aquatic-back-10.png'],
+        1: ['./assets/img/cards/beast-back-02.png', './assets/img/cards/beast-horn-04.png', './assets/img/cards/beast-mouth-02.png', './assets/img/cards/bug-tail-06.png'],
+        2: ['./assets/img/cards/plant-back-12.png', './assets/img/cards/plant-horn-10.png', './assets/img/cards/plant-tail-02.png', './assets/img/cards/reptile-mouth-04.png'],
     }
 };
 
