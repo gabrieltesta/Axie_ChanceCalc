@@ -18,7 +18,7 @@ button {
 body {
     margin: 0;
     padding: 0;
-    background-image: url(/assets/img/bg.jpg);
+    background-image: url('../img/bg.jpg');
     font-family: 'Roboto Slab', sans-serif;
     overflow-y: hidden;
     height: 100vh;
@@ -90,7 +90,7 @@ header .logo img {
 }
 
 .game-container .game-container-content .energy-container .energy-counter {
-    background-image: url(/assets/img/energy.png);
+    background-image: url(../assets/img/energy.png);
     background-size: contain;
     background-position-x: center;
     background-repeat: no-repeat;
@@ -104,13 +104,13 @@ header .logo img {
 
 .game-container .game-container-content button {
     background-color: unset;
-    background-image: url('../assets/img/botao_quadrado.png');
+    background-image: url('../img/botao_quadrado.png');
     background-size: cover;
     background-position: center;
 }
 
 .game-container .game-container-content button:active {
-    background-image: url('../assets/img/botao_quadrado_ativo.png');
+    background-image: url('../img/botao_quadrado_ativo.png');
 }
 
 .game-container .animal-container {
@@ -183,13 +183,13 @@ header .logo img {
     height: 20px;
     background-color: unset;
     border: 0;
-    background-image: url('../assets/img/botao_quadrado.png');
+    background-image: url('../img/botao_quadrado.png');
     background-size: cover;
     background-position: center;
 }
 
 .game-container .animal-container .animal-container-content-column .animal-card-buttons button:active {
-    background-image: url('../assets/img/botao_quadrado_ativo.png');
+    background-image: url('../img/botao_quadrado_ativo.png');
 }
 
 .game-container .animal-container .animal-container-content-column .animal-card-buttons .animal-card-probability {
