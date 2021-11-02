@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Axie Helper</title>
         <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -188,8 +188,169 @@
             </div>
         </footer>
 
-        <div class="options-container ">
+        <div class="modal-cards">
+            <div class="modal-header">
+                <strong>Card Selection</strong>
+                <div class="modal-cards-class">
+                    <span class="modal-label">Type:</span>
+                    <div class="modal-cards-class-item noselect">Any</div>
+                    <div class="modal-cards-class-item noselect aquatic">Aquatic</div>
+                    <div class="modal-cards-class-item noselect beast">Beast</div>
+                    <div class="modal-cards-class-item noselect plant">Plant</div>
+                    <div class="modal-cards-class-item noselect bird">Bird</div>
+                    <div class="modal-cards-class-item noselect bug">Bug</div>
+                    <div class="modal-cards-class-item noselect reptile">Reptile</div>
+                </div>
+                <div class="modal-cards-type">
+                    <span class="modal-label">Part:</span>
+                    <div class="modal-cards-type-item noselect">Any</div>
+                    <div class="modal-cards-type-item noselect aquatic">Back</div>
+                    <div class="modal-cards-type-item noselect beast">Horn</div>
+                    <div class="modal-cards-type-item noselect plant">Mouth</div>
+                    <div class="modal-cards-type-item noselect bird">Tail</div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" name="animal" value="">
+                <input type="hidden" name="card" value="">
+                <img src="/assets/img/cards/aquatic-back-02.png" alt="">
+                <img src="/assets/img/cards/aquatic-back-04.png" alt="">
+                <img src="/assets/img/cards/aquatic-back-06.png" alt="">
+                <img src="/assets/img/cards/aquatic-back-08.png" alt="">
+                <img src="/assets/img/cards/aquatic-back-10.png" alt="">
+                <img src="/assets/img/cards/aquatic-back-12.png" alt="">
+                <img src="/assets/img/cards/aquatic-horn-02.png" alt="">
+                <img src="/assets/img/cards/aquatic-horn-04.png" alt="">
+                <img src="/assets/img/cards/aquatic-horn-06.png" alt="">
+                <img src="/assets/img/cards/aquatic-horn-08.png" alt="">
+                <img src="/assets/img/cards/aquatic-horn-10.png" alt="">
+                <img src="/assets/img/cards/aquatic-horn-12.png" alt="">
+                <img src="/assets/img/cards/aquatic-mouth-02.png" alt="">
+                <img src="/assets/img/cards/aquatic-mouth-04.png" alt="">
+                <img src="/assets/img/cards/aquatic-mouth-08.png" alt="">
+                <img src="/assets/img/cards/aquatic-mouth-10.png" alt="">
+                <img src="/assets/img/cards/aquatic-tail-02.png" alt="">
+                <img src="/assets/img/cards/aquatic-tail-04.png" alt="">
+                <img src="/assets/img/cards/aquatic-tail-06.png" alt="">
+                <img src="/assets/img/cards/aquatic-tail-08.png" alt="">
+                <img src="/assets/img/cards/aquatic-tail-10.png" alt="">
+                <img src="/assets/img/cards/aquatic-tail-12.png" alt="">
 
+                <img src="/assets/img/cards/beast-back-02.png" alt="">
+                <img src="/assets/img/cards/beast-back-04.png" alt="">
+                <img src="/assets/img/cards/beast-back-06.png" alt="">
+                <img src="/assets/img/cards/beast-back-08.png" alt="">
+                <img src="/assets/img/cards/beast-back-10.png" alt="">
+                <img src="/assets/img/cards/beast-back-12.png" alt="">
+                <img src="/assets/img/cards/beast-horn-02.png" alt="">
+                <img src="/assets/img/cards/beast-horn-04.png" alt="">
+                <img src="/assets/img/cards/beast-horn-06.png" alt="">
+                <img src="/assets/img/cards/beast-horn-08.png" alt="">
+                <img src="/assets/img/cards/beast-horn-10.png" alt="">
+                <img src="/assets/img/cards/beast-horn-12.png" alt="">
+                <img src="/assets/img/cards/beast-mouth-02.png" alt="">
+                <img src="/assets/img/cards/beast-mouth-04.png" alt="">
+                <img src="/assets/img/cards/beast-mouth-08.png" alt="">
+                <img src="/assets/img/cards/beast-mouth-10.png" alt="">
+                <img src="/assets/img/cards/beast-tail-02.png" alt="">
+                <img src="/assets/img/cards/beast-tail-04.png" alt="">
+                <img src="/assets/img/cards/beast-tail-06.png" alt="">
+                <img src="/assets/img/cards/beast-tail-08.png" alt="">
+                <img src="/assets/img/cards/beast-tail-10.png" alt="">
+                <img src="/assets/img/cards/beast-tail-12.png" alt="">
+
+                <img src="/assets/img/cards/plant-back-02.png" alt="">
+                <img src="/assets/img/cards/plant-back-04.png" alt="">
+                <img src="/assets/img/cards/plant-back-06.png" alt="">
+                <img src="/assets/img/cards/plant-back-08.png" alt="">
+                <img src="/assets/img/cards/plant-back-10.png" alt="">
+                <img src="/assets/img/cards/plant-back-12.png" alt="">
+                <img src="/assets/img/cards/plant-horn-02.png" alt="">
+                <img src="/assets/img/cards/plant-horn-04.png" alt="">
+                <img src="/assets/img/cards/plant-horn-06.png" alt="">
+                <img src="/assets/img/cards/plant-horn-08.png" alt="">
+                <img src="/assets/img/cards/plant-horn-10.png" alt="">
+                <img src="/assets/img/cards/plant-horn-12.png" alt="">
+                <img src="/assets/img/cards/plant-mouth-02.png" alt="">
+                <img src="/assets/img/cards/plant-mouth-04.png" alt="">
+                <img src="/assets/img/cards/plant-mouth-08.png" alt="">
+                <img src="/assets/img/cards/plant-mouth-10.png" alt="">
+                <img src="/assets/img/cards/plant-tail-02.png" alt="">
+                <img src="/assets/img/cards/plant-tail-04.png" alt="">
+                <img src="/assets/img/cards/plant-tail-06.png" alt="">
+                <img src="/assets/img/cards/plant-tail-08.png" alt="">
+                <img src="/assets/img/cards/plant-tail-10.png" alt="">
+                <img src="/assets/img/cards/plant-tail-12.png" alt="">
+
+                <img src="/assets/img/cards/bird-back-02.png" alt="">
+                <img src="/assets/img/cards/bird-back-04.png" alt="">
+                <img src="/assets/img/cards/bird-back-06.png" alt="">
+                <img src="/assets/img/cards/bird-back-08.png" alt="">
+                <img src="/assets/img/cards/bird-back-10.png" alt="">
+                <img src="/assets/img/cards/bird-back-12.png" alt="">
+                <img src="/assets/img/cards/bird-horn-02.png" alt="">
+                <img src="/assets/img/cards/bird-horn-04.png" alt="">
+                <img src="/assets/img/cards/bird-horn-06.png" alt="">
+                <img src="/assets/img/cards/bird-horn-08.png" alt="">
+                <img src="/assets/img/cards/bird-horn-10.png" alt="">
+                <img src="/assets/img/cards/bird-horn-12.png" alt="">
+                <img src="/assets/img/cards/bird-mouth-02.png" alt="">
+                <img src="/assets/img/cards/bird-mouth-04.png" alt="">
+                <img src="/assets/img/cards/bird-mouth-08.png" alt="">
+                <img src="/assets/img/cards/bird-mouth-10.png" alt="">
+                <img src="/assets/img/cards/bird-tail-02.png" alt="">
+                <img src="/assets/img/cards/bird-tail-04.png" alt="">
+                <img src="/assets/img/cards/bird-tail-06.png" alt="">
+                <img src="/assets/img/cards/bird-tail-08.png" alt="">
+                <img src="/assets/img/cards/bird-tail-10.png" alt="">
+                <img src="/assets/img/cards/bird-tail-12.png" alt="">
+
+                <img src="/assets/img/cards/bug-back-02.png" alt="">
+                <img src="/assets/img/cards/bug-back-04.png" alt="">
+                <img src="/assets/img/cards/bug-back-06.png" alt="">
+                <img src="/assets/img/cards/bug-back-08.png" alt="">
+                <img src="/assets/img/cards/bug-back-10.png" alt="">
+                <img src="/assets/img/cards/bug-back-12.png" alt="">
+                <img src="/assets/img/cards/bug-horn-02.png" alt="">
+                <img src="/assets/img/cards/bug-horn-04.png" alt="">
+                <img src="/assets/img/cards/bug-horn-06.png" alt="">
+                <img src="/assets/img/cards/bug-horn-08.png" alt="">
+                <img src="/assets/img/cards/bug-horn-10.png" alt="">
+                <img src="/assets/img/cards/bug-horn-12.png" alt="">
+                <img src="/assets/img/cards/bug-mouth-02.png" alt="">
+                <img src="/assets/img/cards/bug-mouth-04.png" alt="">
+                <img src="/assets/img/cards/bug-mouth-08.png" alt="">
+                <img src="/assets/img/cards/bug-mouth-10.png" alt="">
+                <img src="/assets/img/cards/bug-tail-02.png" alt="">
+                <img src="/assets/img/cards/bug-tail-04.png" alt="">
+                <img src="/assets/img/cards/bug-tail-06.png" alt="">
+                <img src="/assets/img/cards/bug-tail-08.png" alt="">
+                <img src="/assets/img/cards/bug-tail-10.png" alt="">
+                <img src="/assets/img/cards/bug-tail-12.png" alt="">
+
+                <img src="/assets/img/cards/reptile-back-02.png" alt="">
+                <img src="/assets/img/cards/reptile-back-04.png" alt="">
+                <img src="/assets/img/cards/reptile-back-06.png" alt="">
+                <img src="/assets/img/cards/reptile-back-08.png" alt="">
+                <img src="/assets/img/cards/reptile-back-10.png" alt="">
+                <img src="/assets/img/cards/reptile-back-12.png" alt="">
+                <img src="/assets/img/cards/reptile-horn-02.png" alt="">
+                <img src="/assets/img/cards/reptile-horn-04.png" alt="">
+                <img src="/assets/img/cards/reptile-horn-06.png" alt="">
+                <img src="/assets/img/cards/reptile-horn-08.png" alt="">
+                <img src="/assets/img/cards/reptile-horn-10.png" alt="">
+                <img src="/assets/img/cards/reptile-horn-12.png" alt="">
+                <img src="/assets/img/cards/reptile-mouth-02.png" alt="">
+                <img src="/assets/img/cards/reptile-mouth-04.png" alt="">
+                <img src="/assets/img/cards/reptile-mouth-08.png" alt="">
+                <img src="/assets/img/cards/reptile-mouth-10.png" alt="">
+                <img src="/assets/img/cards/reptile-tail-02.png" alt="">
+                <img src="/assets/img/cards/reptile-tail-04.png" alt="">
+                <img src="/assets/img/cards/reptile-tail-06.png" alt="">
+                <img src="/assets/img/cards/reptile-tail-08.png" alt="">
+                <img src="/assets/img/cards/reptile-tail-10.png" alt="">
+                <img src="/assets/img/cards/reptile-tail-12.png" alt="">
+            </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js " integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous "></script>
         <script src="./assets/js/script.js"></script>

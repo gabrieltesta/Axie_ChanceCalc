@@ -146,10 +146,69 @@ $('.animal-counter').on('click', (evt) => {
 
     if (isDisabled == 'disabled')
         $('.animal-container-content-column[animal="' + animal + '"]').removeAttr('disabled');
-    else {
+    else
         $('.animal-container-content-column[animal="' + animal + '"]').attr('disabled', 'disabled');
-        // $('.animal-container-content-column[animal="' + animal + '"]')
-    }
+
     updateProbability();
 
+});
+
+$('.animal-card').on('click', (evt) => {
+    let animal = $(evt.target).parent().parent().attr('animal');
+    let card = $(evt.target).parent().parent().attr('card');
+    let isDisabled = $(evt.target).parent().parent().attr('disabled');
+
+    if (isDisabled == 'disabled')
+        return false;
+
+    $('input[name="animal"]').val(animal);
+    $('input[name="card"]').val(card);
+});
+
+$('.modal-body img').on('click', (evt) => {
+    let selectedItem = $(evt.target);
+    let animalAnterior = $('input[name="animal"]').val();
+    let cardAnterior = $('input[name="card"]').val();
+
+    if (animalAnterior == '' || cardAnterior == '')
+        return false;
+    else {
+        $('.animal-container-content-column[animal="' + animalAnterior + '"][card="' + cardAnterior + '"] .animal-card img').attr('src', selectedItem.attr('src'));
+        gameData.img_src[animalAnterior][cardAnterior] = selectedItem.attr('src');
+        localStorage.setItem('gameData', JSON.stringify(gameData));
+    }
+});
+
+
+$('.modal-cards-class-item, .modal-cards-type-item').on('click', (evt) => {
+    let selectedFilter = $(evt.target);
+    let selectedFilterText = selectedFilter.text().toLowerCase();
+    let typeOfFilter = $(evt.target).parent().hasClass('modal-cards-class') ? 'class' : 'type';
+    $('.modal-cards-' + typeOfFilter + '-item').removeClass('active');
+
+    if (selectedFilterText != 'any')
+        selectedFilter.addClass('active');
+
+    let activeFilterString = '';
+    let activeClassFilter = $('.modal-cards-class-item.active').text().toLowerCase();
+    let activeTypeFilter = $('.modal-cards-type-item.active').text().toLowerCase();
+
+    if (activeClassFilter != undefined)
+        activeFilterString += activeClassFilter;
+    if (activeTypeFilter != undefined)
+        activeFilterString += '-' + activeTypeFilter;
+
+    console.log(activeFilterString);
+
+    if (activeFilterString == '')
+        $('.modal-body img').show();
+    else {
+        $('.modal-body img').each((i) => {
+            let src = $('.modal-body img:nth-of-type(' + (i + 1) + ')').attr('src');
+            if (src.includes(activeFilterString))
+                $('.modal-body img:nth-of-type(' + (i + 1) + ')').show();
+            else
+                $('.modal-body img:nth-of-type(' + (i + 1) + ')').hide();
+        });
+    }
 });

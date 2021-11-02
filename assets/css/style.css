@@ -237,6 +237,156 @@ footer .footer-container {
     background-image: url(/assets/img/botao_ativo.png);
 }
 
-.options-container {
-    width: 80%;
+.modal-cards {
+    width: 600px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 20px;
+    position: absolute;
+    left: calc(384px + 20vw);
+    top: calc(50vh - 250px);
+    box-shadow: 0px 3px 18px -5px #000;
+    padding: 15px 25px;
+}
+
+.modal-cards .modal-header strong {
+    font-size: 20px;
+    display: block;
+    border-bottom: solid 1px #ccc;
+    padding-bottom: 5px;
+}
+
+.modal-cards .modal-header .modal-cards-class {
+    display: flex;
+    justify-content: left;
+    border-bottom: solid 1px #ccc;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.modal-cards .modal-header .modal-cards-class .modal-cards-class-item {
+    border-radius: 10px 10px 10px 10px;
+    border: solid 1px;
+    padding: 5px 10px;
+    margin-top: 2px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.modal-cards .modal-header .modal-cards-type {
+    display: flex;
+    justify-content: left;
+    border-bottom: solid 1px #ccc;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.modal-cards .modal-header .modal-cards-type .modal-cards-type-item {
+    border-radius: 10px 10px 10px 10px;
+    border: solid 1px;
+    padding: 5px 10px;
+    margin-top: 2px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.modal-label {
+    padding-right: 10px;
+    line-height: 2.2;
+    width: 51px;
+}
+
+.aquatic {
+    background-color: #fff;
+    border-color: #11A4CC;
+    color: #11A4CC;
+}
+
+.aquatic:hover,
+.aquatic.active {
+    background-color: #11A4CC;
+    border-color: #11A4CC;
+    color: #fff;
+}
+
+.beast {
+    background-color: #fff;
+    border-color: #DEAF14;
+    color: #DEAF14;
+}
+
+.beast:hover,
+.beast.active {
+    background-color: #DEAF14;
+    border-color: #DEAF14;
+    color: #fff;
+}
+
+.bird {
+    background-color: #fff;
+    border-color: #F589AD;
+    color: #F589AD;
+}
+
+.bird:hover,
+.bird.active {
+    background-color: #F589AD;
+    border-color: #F589AD;
+    color: #fff;
+}
+
+.plant {
+    background-color: #fff;
+    border-color: #A3BA1C;
+    color: #A3BA1C;
+}
+
+.plant:hover,
+.plant.active {
+    background-color: #A3BA1C;
+    border-color: #A3BA1C;
+    color: #fff;
+}
+
+.bug {
+    background-color: #fff;
+    border-color: #F54E4E;
+    color: #F54E4E;
+}
+
+.bug:hover,
+.bug.active {
+    background-color: #F54E4E;
+    border-color: #F54E4E;
+    color: #fff;
+}
+
+.reptile {
+    background-color: #fff;
+    border-color: #A554D3;
+    color: #A554D3;
+}
+
+.reptile:hover,
+.reptile.active {
+    background-color: #A554D3;
+    border-color: #A554D3;
+    color: #fff;
+}
+
+.modal-body {
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 25px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal-body img {
+    height: auto;
+    max-height: 177px;
+    width: 25%;
+    cursor: pointer;
 }
