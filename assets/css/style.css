@@ -234,7 +234,7 @@ footer .footer-container {
 }
 
 .new-game:active {
-    background-image: url(/assets/img/botao_ativo.png);
+    background-image: url('../img/botao_ativo.png');
 }
 
 .modal-cards {
