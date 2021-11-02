@@ -102,7 +102,7 @@ function updateProbability() {
     let qtdTotalCartas = 12;
 
     for (i = 0; i < animalItems.length; i++) {
-        if ($(animalItems[i]).attr('disabled') == true) {
+        if ($(animalItems[i]).attr('disabled') == 'disabled') {
             qtdTotalCartas -= 1;
             continue;
         }
@@ -120,7 +120,7 @@ function updateProbability() {
         let card = $(animalItems[i]).attr('card');
         let qtd = parseInt($('.animal-container-content-column[animal="' + animal + '"][card="' + card + '"] .animal-card-quantity').text());
 
-        if ($(animalItems[i]).attr('disabled') == true || qtd == 2)
+        if ($(animalItems[i]).attr('disabled') == 'disabled' || qtd == 2)
             $('.animal-container-content-column[animal="' + animal + '"][card="' + card + '"] .animal-card-probability span').text(0);
         else
             $('.animal-container-content-column[animal="' + animal + '"][card="' + card + '"] .animal-card-probability span').text((1 / qtdTotalCartas * 100).toFixed(2));
@@ -128,3 +128,28 @@ function updateProbability() {
 }
 
 updateProbability();
+
+$('.new-game').on('click', () => {
+    for (row = 0; row < 3; row++) {
+        for (column = 0; column < 4; column++) {
+            gameData.qtd[row][column] = 0;
+            $('.animal-container-content-column[animal="' + row + '"][card="' + column + '"] .animal-card-quantity').text(0);
+            $('.energy-counter').text(2);
+            updateProbability();
+        }
+    }
+});
+
+$('.animal-counter').on('click', (evt) => {
+    let animal = $(evt.target).parent().parent().attr('animal');
+    let isDisabled = $(evt.target).parent().parent().attr('disabled');
+
+    if (isDisabled == 'disabled')
+        $('.animal-container-content-column[animal="' + animal + '"]').removeAttr('disabled');
+    else {
+        $('.animal-container-content-column[animal="' + animal + '"]').attr('disabled', 'disabled');
+        // $('.animal-container-content-column[animal="' + animal + '"]')
+    }
+    updateProbability();
+
+});

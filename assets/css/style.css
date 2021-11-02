@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+button {
+    cursor: pointer;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -146,6 +150,15 @@ header .logo img {
     margin-left: 25%;
     transform: skew(-15deg);
     margin-top: -20px;
+    cursor: pointer;
+}
+
+.game-container .animal-container .animal-container-content-column[disabled="disabled"] {
+    filter: grayscale(1);
+}
+
+.game-container .animal-container .animal-container-content-column[disabled="disabled"]:not(.animal-counter) {
+    cursor: not-allowed;
 }
 
 .game-container .animal-container .animal-container-content-column .animal-card img {
@@ -187,16 +200,41 @@ header .logo img {
 }
 
 footer {
+    width: 384px;
+    height: 64px;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+footer .footer-container {
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 100% 64px;
-    width: 384px;
-    height: 64px;
-    background-image: url('/assets/img/header.png');
-    transform: scaleY(-1);
+    background-image: url('/assets/img/footer.png');
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.new-game {
+    background-color: unset;
+    background-image: url(/assets/img/botao.png);
     position: absolute;
-    margin-top: auto;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #32230c;
+    font-weight: 700;
+    border: 0;
+    padding: 10px 20px 10px 20px;
     bottom: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.new-game:active {
+    background-image: url(/assets/img/botao_ativo.png);
 }
 
 .options-container {
