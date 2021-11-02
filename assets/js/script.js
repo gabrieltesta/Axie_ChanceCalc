@@ -134,6 +134,7 @@ $('.new-game').on('click', () => {
         for (column = 0; column < 4; column++) {
             gameData.qtd[row][column] = 0;
             $('.animal-container-content-column[animal="' + row + '"][card="' + column + '"] .animal-card-quantity').text(0);
+            $('.animal-container-content-column[animal="' + row + '"][card="' + column + '"]').removeAttr('disabled');
             $('.energy-counter').text(2);
             updateProbability();
         }
